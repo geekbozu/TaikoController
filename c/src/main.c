@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
+// Some of this code copied lovingly from https://forums.raspberrypi.com/viewtopic.php?t=350378 then edited as needed
 // Demo to continuously sample all ADC inputs and write them to a location in
 // memory where they can be read. Datasheet calls this data "scattering."
 
@@ -37,6 +38,7 @@ int main()
     sleep_ms(50);
 
     // Setup ADC.
+
     adc_gpio_init(26);
     adc_gpio_init(27);
     adc_gpio_init(28);
