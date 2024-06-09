@@ -1,4 +1,7 @@
 build/
 build/**
 *.lck
-PCB/
+*.gbr
+*.zip
+*.drl
+*.gbrjob

@@ -13,11 +13,12 @@ pico_sdk_init()
 # rest of your 
 add_executable(${PROJECT}
     src/main.c
+    src/core1.c
 )
 
 target_include_directories(${PROJECT} PUBLIC include/)
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(${PROJECT} pico_stdlib pico_stdio_usb pico_unique_id hardware_adc hardware_dma)
+target_link_libraries(${PROJECT} pico_multicore pico_stdlib pico_stdio_usb pico_unique_id hardware_adc hardware_dma )
 pico_add_extra_outputs(${PROJECT})
 pico_enable_stdio_usb(${PROJECT} 1)
 pico_enable_stdio_uart(${PROJECT} 0)

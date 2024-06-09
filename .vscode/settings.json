@@ -1,3 +1,8 @@
 {
-    "cmake.sourceDirectory": "C:/Users/geek/Documents/Repos/TaikoController/c"
+    "cmake.sourceDirectory": "C:/Users/geek/Documents/Repos/TaikoController/c",
+    "files.associations": {
+        "stdlib.h": "c",
+        "dma.h": "c",
+        "queue.h": "c"
+    }
 }
